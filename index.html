@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +13,9 @@
     <!-- link style Css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-
+    
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">Where in the world?</div>
@@ -26,23 +25,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <div class="countries">
         <div class="container">
             <div class="main">
                 <div class="filter">
-                    <div class="search_box">
-                        <i class="fas fa-search fa-1x" onkeypress="Enter"></i>
+                    <form class="search_box">
+                        <i class="fas fa-search fa-1x"></i>
                         <input type="search" placeholder="Search for a country.." id="search">
-                    </div>
+                    </form>
                     <div class="select_box">
-                        <p value="0" class="selected"><span>Filter By Region</span><i class="fas fa-caret-right"></i> </p>
+                        <p class="selected"><span>Filter By Region</span><i class="fas fa-caret-right"></i> </p>
                         <ul id="box">
-                            <li value="2">Africa</li>
-                            <li value="1">Americas</li>
-                            <li value="3">Asia</li>
-                            <li value="4">Europe</li>
-                            <li value="5">Oceania</li>
+                            <li>Africa</li>
+                            <li>Americas</li>
+                            <li>Asia</li>
+                            <li>Europe</li>
+                            <li>Oceania</li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +59,7 @@
             </div>
         </div>
     </div>
+    
     <script src="js/main.js"></script>
 </body>
-
 </html>
