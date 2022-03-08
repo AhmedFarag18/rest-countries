@@ -276,6 +276,9 @@ body {
 .country-details .country-data .country-text {
   width: 60%;
 }
+.country-details .country-data .country-text h4 {
+  font-size: 1.5em;
+}
 .country-details .country-data .country-text .info {
   display: -webkit-box;
   display: -ms-flexbox;
