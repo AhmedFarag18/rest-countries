@@ -127,7 +127,7 @@ function getDetailsData(index, data) {
                 <img src="${data[index].flags.png}" alt="country Image">
             </div>
             <div class="country-text">
-                <h2>${data[index].name}</h2>
+                <h4>${data[index].name}</h4>
                 <div class="info">
                     <div class="left">
                         <p><span>Native Name: </span> ${data[index].nativeName}</p>
