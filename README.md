@@ -26,3 +26,6 @@ Your users should be able to:
 
 ## Technologies Used 
 HTML - CSS - Javascript - SCSS - API 
+
+## Live Preview
+[Live Preview](https://ahmedfarag18.github.io/rest-countries/)
