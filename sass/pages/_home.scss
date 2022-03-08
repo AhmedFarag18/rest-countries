@@ -1,0 +1,136 @@
+// Import mixins
+@import "../mixins/mixins";
+
+/*=====  Start Navbar =====*/
+
+.header {
+    padding: 30px 0;
+    background-color: var(--white);
+    .navbar {
+        @include flex();
+        align-items: center;
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .mode {
+            cursor: pointer;
+            &:hover {
+                color: #a6a1a1;
+            }
+        }
+    }
+}
+
+
+/*=====  Start Cards =====*/
+
+.countries {
+    background-color: var(--light_Mode_BG);
+    .filter {
+        @include flex();
+        padding: 50px 0;
+        .search_box {
+            position: relative;
+            height: 50px;
+            // background-color: var(--white);
+            width: 400px;
+            box-shadow: 0px 0px 5px 0px var(--shadow);
+            input {
+                border-radius: 5px;
+                background-color: var(--white);
+                color: var(--light_Mode_Text);
+                border: none;
+                width: 100%;
+                height: 100%;
+                padding: 10px 10px 10px 80px;
+                &::placeholder {
+                    color: var(--placeholder);
+                }
+            }
+            i {
+                position: absolute;
+                left: 30px;
+                top: 50%;
+                color: var(--light_Mode_Text);
+                cursor: pointer;
+                transform: translateY(-50%);
+            }
+        }
+        .select_box {
+            background-color: var(--white);
+            position: relative;
+            height: 50px;
+            width: 200px;
+            padding: 0 20px;
+            box-shadow: 0px 0px 5px 0px var(--shadow);
+            border-radius: 5px;
+            p.selected {
+                @include flex();
+                align-items: center;
+                height: 100%;
+                cursor: pointer;
+                user-select: none;
+            }
+            #box {
+                border: none;
+                position: absolute;
+                left: 0;
+                top: 60px;
+                background-color: var(--white);
+                width: 100%;
+                border-radius: 5px;
+                padding: 5px;
+                opacity: 0;
+                visibility: hidden;
+                transform: scale(0);
+                transition: all .5s ease;
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1);
+                    transform-origin: center;
+                }
+                li {
+                    padding: 5px 20px;
+                    font-weight: inherit;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    #card {
+        @include flex();
+        padding: 20px 0 50px 0;
+        gap: 80px;
+        justify-content: flex-start;
+        >div {
+            flex: calc((100% / 4) - 80px);
+            min-width: 180px;
+            max-width: 300px;
+            background-color: var(--white);
+            color: var(--light_Mode_Text);
+            box-shadow: 0px 0px 5px 0px var(--shadow);
+            img {
+                width: 100%;
+                height: 200px;
+                cursor: pointer;
+            }
+            .info {
+                padding: 30px 20px;
+                h3 {
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-weight: 600;
+                    line-height: 1.6;
+                    span {
+                        font-weight: 300;
+                        color: var(--light_Mode_Text);
+                    }
+                }
+            }
+        }
+    }
+}

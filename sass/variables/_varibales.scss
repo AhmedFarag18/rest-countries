@@ -1,0 +1,19 @@
+:root {
+    --dark_Mode_Elements: hsl(209, 23%, 22%); //(Dark Mode Elements)
+    --dark_Mode_BG: hsl(207, 26%, 17%); // (Dark Mode Background)
+    --light_Mode_Text: hsl(200, 15%, 8%); //(Light Mode Text)
+    --light_Mode_Input: hsl(0, 0%, 52%); // (Light Mode Input)
+    --light_Mode_BG: hsl(0, 0%, 98%); // (Light Mode Background)
+    --white: hsl(0, 0%, 100%); // (Dark Mode Text & Light Mode Elements)
+    --shadow: #ebe9e9;
+    --placeholder: #555;
+}
+
+body.dark {
+    --light_Mode_Text: hsl(0, 0%, 100%);
+    --light_Mode_Input: hsl(0, 0%, 52%);
+    --light_Mode_BG: hsl(207, 26%, 17%);
+    --white: hsl(209, 23%, 22%);
+    --shadow: #00000029;
+    --placeholder: #eee;
+}

@@ -1,0 +1,103 @@
+.country-details {
+    padding: 50px 0;
+    .back__button {
+        margin-bottom: 50px;
+        button.btn_back {
+            cursor: pointer;
+            border: none;
+            box-shadow: 0px 0px 5px 0px var(--shadow);
+            background: var(--white);
+            color: var(--light_Mode_Text);
+            border-radius: 5px;
+            padding: 10px 30px;
+            letter-spacing: 1px;
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+    .country-data {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        .country-image {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+        .country-text {
+            width: 60%;
+            .info {
+                display: flex;
+                align-items: center;
+                gap: 180px;
+                margin: 30px 0 60px;
+                p {
+                    margin-bottom: 10px;
+                    color: var(--light_Mode_Text);
+                    span {
+                        text-transform: capitalize;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .borders {
+                font-weight: 600;
+                span {
+                    display: inline-block;
+                    padding: 5px 20px;
+                    background-color: var(--white);
+                    color: var(--light_Mode_Text);
+                    box-shadow: 0px 0px 5px 0px var(--shadow);
+                    border-radius: 5px;
+                    margin: 5px;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+
+/*--------- Responsive in All Pages -------*/
+
+@media (max-width:767px) {
+    .countries #card {
+        justify-content: center;
+    }
+    #card>div {
+        flex: calc((100% / 2) - 80px);
+        min-width: 100%;
+    }
+    .filter>div {
+        width: auto;
+    }
+    .country-details {
+        .country-data {
+            flex-direction: column;
+            .country-image {
+                width: 100%;
+            }
+            .country-text {
+                width: 100%;
+                .info {
+                    flex-direction: column;
+                    gap: 0px;
+                    align-items: start;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:530px) {
+    #card>div {
+        flex: calc((100% / 1) - 80px);
+        min-width: 100%;
+    }
+    .header .navbar .logo {
+        font-size: 20px;
+    }
+}

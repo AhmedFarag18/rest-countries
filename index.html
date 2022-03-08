@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Rest Countries Api Challenge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries Api</title>
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- fonts google -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <!-- link style Css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">Where in the world?</div>
+                <div class="mode">
+                    <i class=" fa-moon far"></i>
+                    <span>Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="countries">
+        <div class="container">
+            <div class="main">
+                <div class="filter">
+                    <div class="search_box">
+                        <i class="fas fa-search fa-1x" onkeypress="Enter"></i>
+                        <input type="search" placeholder="Search for a country.." id="search">
+                    </div>
+                    <div class="select_box">
+                        <p value="0" class="selected"><span>Filter By Region</span><i class="fas fa-caret-right"></i> </p>
+                        <ul id="box">
+                            <li value="2">Africa</li>
+                            <li value="1">Americas</li>
+                            <li value="3">Asia</li>
+                            <li value="4">Europe</li>
+                            <li value="5">Oceania</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card" class="card"></div>
+            </div>
+        </div>
+    </div>
+    <div class="country-details hidden">
+        <div class="container">
+            <div class="details-info">
+                <div class="back__button">
+                    <button class="btn_back"><i class="fas fa-arrow-left"></i>Back</button>
+                </div>
+                <div class="country-data"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
