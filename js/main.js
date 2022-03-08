@@ -68,7 +68,6 @@ function getDataSelectedItem(data) {
             const currentItem = cardItem.querySelector("img");
             ItemIndex = (currentItem.getAttribute("alt")) - 1;
             getDetailsData(ItemIndex, data);
-            console.log(data);
         });
     });
 
@@ -93,7 +92,6 @@ function getDataByRegion(item) {
         .then(response => response.json())
         .then(data => {
             document.querySelector("#card").innerHTML = "";
-            console.log(data);
             getCountries(data);
         }).catch(err => {
             console.log(err)
@@ -165,7 +163,7 @@ backBtn.addEventListener("click", () => {
 function getAllBorders(index, data) {
     let bordersLength = data[index].borders.length;
     let borders = document.getElementById("borders");
-    console.log(data[index].borders)
+
     for (let a = 0; a < bordersLength; a++) {
         borders.innerHTML += `<span>${data[index].borders[a]}</span>`
     }
@@ -212,7 +210,6 @@ function getDetailsOfBorder(data) {
     /* --------------- Get All Borders --------------- */
     let bordersLength = data.borders.length;
     let borders = document.getElementById("borders");
-    console.log(data.borders)
     for (let a = 0; a < bordersLength; a++) {
         borders.innerHTML += `<span>${data.borders[a]}</span>`
     }
@@ -245,7 +242,6 @@ function getDataSelectedBorder(alpha3Code) {
     BorderCountries.forEach(element => {
         element.addEventListener("click", () => {
             alpha3Code = element.textContent;
-            console.log(alpha3Code);
             searchByAlpha(alpha3Code);
         });
     })
