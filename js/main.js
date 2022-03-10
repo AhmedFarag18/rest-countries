@@ -88,7 +88,7 @@ function filterByRegion(item) {
 
 /* ----------- Get Data of Region Selected --------------- */
 function getDataByRegion(item) {
-    fetch(`https:restcountries.com/v2/region/${item.textContent.toLowerCase()}`)
+    fetch(`https://restcountries.com/v2/region/${item.textContent.toLowerCase()}`)
         .then(response => response.json())
         .then(data => {
             document.querySelector("#card").innerHTML = "";
